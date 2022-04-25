@@ -1,0 +1,117 @@
+.movies-gallery{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.gallery-cont{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.movies-gallery img{
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+}
+.gallery-item{
+    width: 30%;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-box-shadow: 3px 2px 15px 1px rgba(116,116,116,0.69); 
+    box-shadow: 3px 2px 15px 1px rgba(116,116,116,0.69);
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+.gallery-item:hover {
+    background-color: rgb(81, 76, 234);
+
+}
+.gallery-item:hover .gallery-rating p,
+.gallery-item:hover .gallery-name h2{
+    color: white;
+}
+.gallery-item-cont{
+    width: 90%;
+    height: 90%;
+}
+.gallery-reating{
+    display: flex;
+    padding: 10px 0;
+    border: 1px solid yellow;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 40%;
+    justify-content: space-around;
+    border-radius: 10px;
+
+}
+.gallery-reating i{
+    font-size: 18px;
+    color: yellow;
+}
+.gallery-reating p {
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    color: gray;
+}
+.gallery-name{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.gallery-name h2{
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    color: rgb(75, 74, 74);
+}
+
+@media  screen and (min-width: 100px) and (max-width:480px){
+
+    .gallery-item{
+        width: 45%;
+        height: 11%;
+    }
+
+    .movies-gallery img{
+        width: 90%;
+        height: 130px;
+    }
+
+    .gallery-image{
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery-reating i{
+        font-size: 10px;
+    }
+
+    .gallery-reating p{
+        font-size: 10px;
+    }
+
+    .gallery-name{
+        margin-top: 2px;
+    }
+
+    .gallery-name h2{
+        font-size: 11px;
+    }
+
+    .gallery-reating{
+        width: 30%;
+        padding: 0;
+    }
+
+}
+
+@media screen and (min-width: 461px) and (max-width:768px) {
+    .gallery-item{
+        width: 45%;
+        height: 9%;
+    }
+}
